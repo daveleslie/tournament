@@ -120,7 +120,6 @@ def swissPairings():
         name2: the second player's name
     """
     standings = playerStandings()
-    
     pairings = []
     i=0
 
