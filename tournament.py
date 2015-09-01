@@ -133,6 +133,15 @@ def swissPairings():
 
     return pairings
 
+def registerTournament(tournament_name):
+    """
+     Adds a tournament to the tournament database
 
+     Each tournament is assigned a unique serial id number as primary key
+
+    :param tournament_name: a text field to capture a descriptive name of the
+                            tournament
+
+    """
 
 
