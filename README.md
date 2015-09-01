@@ -1,22 +1,22 @@
 ## Swiss-style tournament results database
 
-This application is designed to be run from a linux OS with python and a postgreSQL server installed.
-A PostgreSQL database client (like psql for linux) is required to run the SQL code in tournament.sql
+This is a project submitted for the Udacity Fullstack nanodegree online course. It sets up a PostgreSQL database and then tests the suitability of the database for facilitating the scoring of a swiss-style tournament by making use of the psyopg2 database API.
 
-##### Follow these steps to run the application:
+#### The following steps are required to run the application:
 
-1. From the psql database client, create a new tournament database:
+##### 1. Setup your environment
+1. Install [Vagrant](vagrantup.com) and [VirtualBox](virtualbox.org)
+2. Clone the tournament repository
 
-	'CREATE DATABASE TOURNAMENT;'
+##### 2. Start your vagrant session
+3. type 'vagrantup' from the commandline
+4. connect to virtualbox through vagrant by typing 'vagrant ssh' from the command line
+5. change to the shared folder where you cloned the repository by typing 'cd /foldername' where 'foldername' is the directory of the clones repository
 
-2. Connect to the database:
+##### 3. Open the PostgreSQL database client and import database schema
+6. from the commandline type 'psql'
+7. setup the database by typing \i tournament.sql
+8. exit psql by typing \q
 
-	'\c tournament'
-	
-3. Import the database schema from the tournament.sql file:
-
-	'\i tournament.sql'
-	
-4. Exit the psql database client and run the unit tests from the command line with python:
-	
-	'python tournament_test.py' 
+#### 4. Run the unit tests
+8. from the command line type 'python tournament_test.py'
