@@ -1,6 +1,6 @@
 ## Swiss-style tournament results database
 
-This is a project submitted for the Udacity Fullstack nanodegree online course. It sets up a PostgreSQL database and then tests the suitability of the database for facilitating the scoring of a swiss-style tournament by making use of the psyopg2 database API.
+This is a project submitted for the Udacity Fullstack nanodegree online course. It sets up a PostgreSQL database and then tests the suitability of the database for facilitating the scoring of a swiss-style tournament by making use of the psycopg2 database API.
 
 #### The following steps are required to run the application:
 
@@ -11,7 +11,7 @@ This is a project submitted for the Udacity Fullstack nanodegree online course. 
 ##### 2. Start your vagrant session
 3. type 'vagrantup' from the commandline
 4. connect to virtualbox through vagrant by typing 'vagrant ssh' from the command line
-5. change to the shared folder where you cloned the repository by typing 'cd /foldername' where 'foldername' is the directory of the clones repository
+5. change to the shared folder where you cloned the repository by typing 'cd /foldername' where 'foldername' is the directory of the cloned repository
 
 ##### 3. Open the PostgreSQL database client and import database schema
 6. from the commandline type 'psql'
