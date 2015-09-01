@@ -18,5 +18,5 @@ This is a project submitted for the Udacity Fullstack nanodegree online course. 
 7. setup the database by typing \i tournament.sql
 8. exit psql by typing \q
 
-#### 4. Run the unit tests
+##### 4. Run the unit tests
 8. from the command line type 'python tournament_test.py'
