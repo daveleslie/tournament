@@ -9,7 +9,7 @@ This is a project submitted for the Udacity Fullstack nanodegree online course. 
 2. Clone the tournament repository
 
 ##### 2. Start your vagrant session
-3. type 'vagrantup' from the commandline
+3. type 'vagrant up' from the commandline
 4. connect to virtualbox through vagrant by typing 'vagrant ssh' from the command line
 5. change to the shared folder where you cloned the repository by typing 'cd /foldername' where 'foldername' is the directory of the cloned repository
 
