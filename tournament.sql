@@ -9,15 +9,21 @@
 
 
 --create the database
-DROP DATABASE extra;
-CREATE DATABASE extra;
+DROP DATABASE tournament;
+CREATE DATABASE tournament;
 
 --connect to database
-\c extra
+\c tournament
 
 --create the tournament table
 CREATE TABLE tournament (
   tournament_id SERIAL PRIMARY KEY, tournament_name TEXT
+);
+
+-- create the players table
+CREATE TABLE players (
+  player_id SERIAL PRIMARY KEY, player_name TEXT, total_wins INTEGER NOT NULL DEFAULT 0,
+  total_losses INTEGER NOT NULL DEFAULT 0, total_matches INTEGER NOT NULL DEFAULT 0
 );
 
 --create tournament register
@@ -29,16 +35,10 @@ CREATE TABLE tournament_register (
   matches INTEGER NOT NULL DEFAULT 0
 );
 
--- create the players table
-CREATE TABLE players (
-  player_id SERIAL PRIMARY KEY, player_name TEXT, total_wins INTEGER NOT NULL DEFAULT 0,
-  total_losses INTEGER NOT NULL DEFAULT 0, total_matches INTEGER NOT NULL DEFAULT 0
-);
-
 --create the matches table
 CREATE TABLE matches (
   match_id SERIAL PRIMARY KEY,
-  tournament_id INTEGER NOT NULL REFERENCES tournament(tournament_id),
+  --tournament_id INTEGER NOT NULL REFERENCES tournament(tournament_id),
   winner INTEGER references players(player_id), 
   loser INTEGER references players(player_id)
 );
